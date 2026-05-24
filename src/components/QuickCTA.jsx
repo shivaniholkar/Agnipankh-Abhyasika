@@ -10,7 +10,7 @@
     },
     {
       id: 2,
-      href: "tel:+919876543210",
+      href: "tel:+918208730007",
       iconClass: "fas fa-phone-alt",
       label: "कॉल करा",
       className:
@@ -30,15 +30,15 @@
       <div className="relative max-w-4xl mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
-          आजच तुमचा अभ्यास सुरू करा! 🚀
+          आजच तुमचा अभ्यास सुरू करा आणि तुमचे स्वप्न साकार करा 🚀
         </h2>
 
         {/* Description */}
-        <p className="text-white/80 text-xl mb-10 max-w-2xl mx-auto">
+        {/* <p className="text-white/80 text-xl mb-10 max-w-2xl mx-auto">
           पहिल्या 50 विद्यार्थ्यांना{" "}
           <span className="font-bold text-white">20% सवलत</span>! संधी गमावू
           नका — आत्ताच जागा आरक्षित करा.
-        </p>
+        </p> */}
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4 justify-center">

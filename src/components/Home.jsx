@@ -1,4 +1,6 @@
-﻿function Home() {
+﻿import hero from "../assets/hero.jpg"
+
+function Home() {
   const particles = [
     { top: "20%", left: "15%", delay: "0s", duration: "5s" },
     { top: "40%", left: "75%", delay: "1s", duration: "4s" },
@@ -10,7 +12,7 @@
 
   const stats = [
     { value: "500+", label: "यशस्वी विद्यार्थी" },
-    { value: "150+", label: "अभ्यास कक्ष" },
+    { value: "85+", label: "सीट्स" },
     { value: "24/7", label: "उपलब्धता" },
   ];
 
@@ -90,9 +92,9 @@
               तुमच्या
               <span className="gradient-text"> यशाची</span>
               <br />
-              सुरुवात
+              सुरुवात इथूनच
               <span className="relative inline-block">
-                {" "}इथून
+                {" "}
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
                   viewBox="0 0 200 12"
@@ -112,17 +114,17 @@
                   </defs>
                 </svg>
               </span>{" "}
-              होते.
+              होते
             </h1>
 
             {/* Description */}
             <p className="text-gray-400 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
-              पुस्तके नाहीत, फक्त{" "}
+               
               <span className="text-white font-semibold">
                 शांतता आणि एकाग्रता
               </span>
               . आधुनिक अभ्यास कक्ष, वातानुकूलित वातावरण आणि ध्यानपूर्ण शांतता
-              — तुमच्या स्वप्नांच्या परीक्षेची तयारी करा{" "}
+              — तुमच्या स्वप्नांच्या परीक्षेची आत्तापासूनच तयारी करा{" "}
               <span className="text-primary-400 font-semibold">
                 अग्निपंख अभ्यासिकेत
               </span>
@@ -167,7 +169,7 @@
               {/* Main Image */}
               <div className="glass rounded-3xl p-2 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=500&fit=crop"
+                  src={hero}
                   alt="अग्निपंख अभ्यासिका"
                   className="rounded-2xl w-full h-[500px] object-cover"
                 />
@@ -218,7 +220,7 @@
                     ))}
                   </div>
                   <span className="text-white text-sm font-medium">
-                    120+ सध्या अभ्यासरत
+                    90+ सध्या अभ्यासरत
                   </span>
                 </div>
               </div>

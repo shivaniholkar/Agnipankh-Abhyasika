@@ -1,4 +1,6 @@
 ﻿// import ScrollReveal from './ScrollReveal';
+import about1 from "../assets/about1.jpg"
+import about2 from "../assets/about2.jpg"
 
 function About() {
   return (
@@ -16,7 +18,7 @@ function About() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <img
-                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=300&h=350&fit=crop"
+                    src={about1}
                     className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
                     alt="अभ्यासिका"
                   />
@@ -31,7 +33,7 @@ function About() {
                     <div className="text-orange-200 font-medium">विद्यार्थी रेटिंग</div>
                   </div>
                   <img
-                    src="https://images.unsplash.com/photo-1568667256549-094345857637?w=300&h=350&fit=crop"
+                    src={about2}
                     className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
                     alt="अभ्यास कक्ष"
                   />
@@ -59,15 +61,15 @@ function About() {
 
               {/* Heading */}
               <h2 className="text-4xl lg:text-5xl font-black text-dark-900 mb-6 leading-tight">
-                फक्त अभ्यास कक्ष,
-                <span className="gradient-text"> पुस्तके नाहीत</span> —
-                तुमची एकाग्रता हीच आमची शक्ती!
+                आदर्श अभ्यास कक्ष—
+                <span className="gradient-text"> तुमची एकाग्रता हीच आमची शक्ती!</span> 
+                
               </h2>
 
               {/* Description */}
               <p className="text-dark-600 text-lg leading-relaxed mb-8">
-                <strong className="text-dark-800">अग्निपंख अभ्यासिका</strong> ही एक आधुनिक अभ्यास जागा आहे जिथे
-                पुस्तकांचे ओझे नाही — फक्त शांत, आरामदायक आणि एकाग्रतेसाठी तयार केलेले
+                <strong className="text-dark-800">अग्निपंख अभ्यासिका</strong> ही एक आधुनिक अभ्यासासाठीची जागा आहे जिथे
+                फक्त शांत, आरामदायक आणि एकाग्रतेसाठी तयार केलेले
                 वैयक्तिक अभ्यास कक्ष. प्रत्येक विद्यार्थ्याला स्वतःचे खाजगी स्थान मिळते
                 जिथे तो/ती पूर्ण लक्ष केंद्रित करून अभ्यास करू शकतो/ते.
               </p>
@@ -91,8 +93,8 @@ function About() {
                     <i className="fas fa-user-shield text-accent text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-dark-800 text-lg">वैयक्तिक कक्ष</h4>
-                    <p className="text-dark-500">प्रत्येक विद्यार्थ्यासाठी स्वतंत्र खाजगी अभ्यास जागा</p>
+                    <h4 className="font-bold text-dark-800 text-lg">वैयक्तिक डेस्क</h4>
+                    <p className="text-dark-500">प्रत्येक विद्यार्थ्यासाठी स्वतंत्र खाजगी जागा</p>
                   </div>
                 </div>
 
@@ -110,7 +112,7 @@ function About() {
 
               {/* CTA Button */}
               <a
-                href="#compartments"
+                href="#gallery"
                 className="inline-flex items-center space-x-3 bg-dark-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-dark-800 transition-all duration-300 shadow-xl group"
               >
                 <span>अभ्यास कक्ष पहा</span>

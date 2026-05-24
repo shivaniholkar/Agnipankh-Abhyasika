@@ -1,4 +1,6 @@
 ﻿import { useState, useEffect } from 'react';
+import logo from '../assets/logo.jpg'
+
 
 function StaticBottom() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -22,7 +24,7 @@ function StaticBottom() {
       id: 1,
       href: "#",
       iconClass: "fab fa-facebook-f",
-      hoverBg: "hover:bg-primary-600",
+      hoverBg: "hover:bg-blue-600",
     },
     {
       id: 2,
@@ -32,7 +34,7 @@ function StaticBottom() {
     },
     {
       id: 3,
-      href: "#",
+      href: "https://wa.me/7887975427",
       iconClass: "fab fa-whatsapp",
       hoverBg: "hover:bg-green-600",
     },
@@ -48,17 +50,17 @@ function StaticBottom() {
     { id: 1, href: "#home", label: "मुख्यपृष्ठ" },
     { id: 2, href: "#about", label: "आमच्याबद्दल" },
     { id: 3, href: "#features", label: "सुविधा" },
-    { id: 4, href: "#compartments", label: "अभ्यास कक्ष" },
-    { id: 5, href: "#pricing", label: "दरपत्रक" },
+    { id: 4, href: "#pricing", label: "दरपत्रक" },
+    { id: 5, href: "#gallery", label: "गॅलरी" },
     { id: 6, href: "#booking", label: "नोंदणी" },
   ];
 
   const services = [
-    { id: 1, href: "#", label: "ओपन डेस्क" },
-    { id: 2, href: "#", label: "सेमी-प्रायव्हेट कक्ष" },
-    { id: 3, href: "#", label: "खाजगी कक्ष" },
-    { id: 4, href: "#", label: "ग्रुप स्टडी रूम" },
-    { id: 5, href: "#", label: "दैनिक पास" },
+    { id: 1, href: "#features", label: "हाय-स्पीड WiFi" },
+    { id: 2, href: "#features", label: "वातानुकूलित कक्ष" },
+    { id: 3, href: "#features", label: "पॉवर आउटलेट" },
+    { id: 4, href: "#features", label: "CCTV सुरक्षा" },
+    { id: 5, href: "#features", label: "स्वच्छ शौचालय" },
   ];
 
   const contactInfo = [
@@ -68,9 +70,8 @@ function StaticBottom() {
       type: "text",
       content: (
         <>
-          शिवाजी रोड, स्टेशन जवळ,
-          <br />
-          पुणे - 411001
+          फोरप्राईड कॉम्प्लेक्स, जळोची रोड, सूर्यनगरी, M.I.D.C.
+          <br />बारामती - 413102
         </>
       ),
     },
@@ -78,15 +79,15 @@ function StaticBottom() {
       id: 2,
       iconClass: "fas fa-phone-alt",
       type: "link",
-      href: "tel:+919876543210",
-      content: "+91 98765 43210",
+      href: "tel:+918208730007",
+      content: "+91 8208730007",
     },
     {
       id: 3,
       iconClass: "fas fa-envelope",
       type: "link",
-      href: "mailto:info@shantiniketan.com",
-      content: "info@shantiniketan.com",
+      href: "mailto:agnipankhabhyasika2022@gmail.com",
+      content: "agnipankhabhyasika2022@gmail.com",
     },
     {
       id: 4,
@@ -117,15 +118,23 @@ function StaticBottom() {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               {/* Logo */}
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent rounded-xl flex items-center justify-center shadow-lg">
-                  <i className="fas fa-book-reader text-white text-xl"></i>
+              <div className="flex items-center space-x-3 mb-6 group">
+                <div className="w-12 h-12 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 shadow-lg overflow-hidden">
+                  <img
+                    src={logo}
+                    alt="Logo"
+                    className="w-12 h-12 object-cover rounded-xl"
+                  />
                 </div>
-                <div>
-                  <span className="text-xl font-bold text-white">
-                    अग्निपंख
-                  </span>
-                  <span className="block text-xs text-primary-300 -mt-1">
+
+                <div className="flex flex-col justify-center">
+                  <div className="relative mt-2">
+                    <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-primary-400 tracking-wider">
+                      अग्निपंख
+                    </span>
+                  </div>
+
+                  <span className="text-md uppercase tracking-[0.1em] text-primary-400 font-bold opacity-80 group-hover:text-white transition-colors -mt-1">
                     अभ्यासिका
                   </span>
                 </div>
@@ -143,6 +152,7 @@ function StaticBottom() {
                   <a
                     key={social.id}
                     href={social.href}
+                    target="_blank"
                     className={`w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center ${social.hoverBg} transition-colors`}
                   >
                     <i className={`${social.iconClass} text-white`}></i>
@@ -196,14 +206,12 @@ function StaticBottom() {
                 {contactInfo.map((info) => (
                   <li
                     key={info.id}
-                    className={`flex ${
-                      info.type === "text" ? "items-start" : "items-center"
-                    } space-x-3`}
+                    className={`flex ${info.type === "text" ? "items-start" : "items-center"
+                      } space-x-3`}
                   >
                     <i
-                      className={`${info.iconClass} text-primary-400 ${
-                        info.type === "text" ? "mt-1" : ""
-                      }`}
+                      className={`${info.iconClass} text-primary-400 ${info.type === "text" ? "mt-1" : ""
+                        }`}
                     ></i>
                     {info.type === "link" ? (
                       <a
@@ -233,7 +241,7 @@ function StaticBottom() {
 
               {/* Bottom Links */}
               <div className="flex items-center space-x-6 text-sm">
-                {bottomLinks.map((link) => (
+                {/* {bottomLinks.map((link) => (
                   <a
                     key={link.id}
                     href={link.href}
@@ -241,7 +249,11 @@ function StaticBottom() {
                   >
                     {link.label}
                   </a>
-                ))}
+                ))} */}
+                <p className="text-gray-500 text-sm text-center md:text-left">
+                Developed by {" "}
+                <span className="text-orange-600">Shivani</span>
+              </p>
               </div>
             </div>
           </div>
@@ -251,11 +263,10 @@ function StaticBottom() {
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full shadow-2xl shadow-primary-600/40 flex items-center justify-center z-50 transition-all duration-300 hover:from-primary-700 hover:to-primary-600 cursor-pointer ${
-          showBackToTop
+        className={`fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-full shadow-2xl shadow-primary-600/40 flex items-center justify-center z-50 transition-all duration-300 hover:from-primary-700 hover:to-primary-600 cursor-pointer ${showBackToTop
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10 pointer-events-none"
-        }`}
+          }`}
         aria-label="Back to top"
       >
         <i className="fas fa-arrow-up text-lg"></i>

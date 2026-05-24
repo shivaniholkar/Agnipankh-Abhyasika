@@ -11,8 +11,8 @@ function Pricing() {
       iconBg: "bg-primary-500/20",
       title: "दैनिक पास",
       subtitle: "एक दिवसासाठी",
-      monthlyPrice: "₹99",
-      yearlyPrice: "₹79",
+      monthlyPrice: "₹49",
+      yearlyPrice: "₹39",
       priceLabel: "/दिवस",
       priceLabelYearly: "/दिवस",
       isPopular: false,
@@ -25,7 +25,7 @@ function Pricing() {
         { text: "WiFi सुविधा", available: true },
         { text: "चार्जिंग पॉइंट", available: true },
         { text: "पिण्याचे पाणी", available: true },
-        { text: "लॉकर नाही", available: false },
+        // { text: "लॉकर नाही", available: false },
       ],
     },
     {
@@ -33,10 +33,10 @@ function Pricing() {
       iconClass: "fas fa-gem",
       iconColor: "text-white",
       iconBg: "bg-gradient-to-br from-primary-500 to-accent shadow-lg shadow-primary-500/30",
-      title: "मासिक योजना",
-      subtitle: "सर्वोत्कृष्ट सुविधा",
-      monthlyPrice: "₹1799",
-      yearlyPrice: "₹1439",
+      title: "मासिक योजना (Slot 1)",
+      subtitle: "6 AM - 11 PM",
+      monthlyPrice: "₹500",
+      yearlyPrice: "₹400",
       priceLabel: "/महिना",
       priceLabelYearly: "/महिना",
       isPopular: true,
@@ -45,22 +45,22 @@ function Pricing() {
         "btn-premium block w-full text-center bg-gradient-to-r from-primary-600 to-primary-500 text-white py-4 rounded-xl font-bold hover:from-primary-700 hover:to-primary-600 transition-all duration-300 shadow-xl shadow-primary-600/30",
       btnLabel: "मासिक योजना निवडा",
       features: [
-        { text: "सेमी-प्रायव्हेट कक्ष", available: true },
+        // { text: "सेमी-प्रायव्हेट कक्ष", available: true },
         { text: "हाय-स्पीड WiFi", available: true },
         { text: "वैयक्तिक लॉकर", available: true },
-        { text: "मोफत चहा/कॉफी", available: true },
+        // { text: "मोफत चहा/कॉफी", available: true },
         { text: "24/7 प्रवेश", available: true },
       ],
     },
     {
       id: 3,
-      iconClass: "fas fa-users",
+      iconClass: "fas fa-gem",
       iconColor: "text-orange-400",
       iconBg: "bg-orange-500/20",
-      title: "ग्रुप योजना",
-      subtitle: "3+ विद्यार्थ्यांसाठी",
-      monthlyPrice: "₹1499",
-      yearlyPrice: "₹1199",
+      title: "मासिक योजना (Slot 2)",
+      subtitle: "24 hrs",
+      monthlyPrice: "₹700",
+      yearlyPrice: "₹560",
       priceLabel: "/प्रत्येकी/महिना",
       priceLabelYearly: "/प्रत्येकी/महिना",
       isPopular: false,
@@ -170,7 +170,7 @@ function Pricing() {
               </div>
 
               {/* Features List */}
-              <ul className="space-y-4 mb-10">
+              {/* <ul className="space-y-4 mb-10">
                 {plan.features.map((feature, index) => (
                   <li
                     key={index}
@@ -188,7 +188,7 @@ function Pricing() {
                     <span>{feature.text}</span>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
 
               {/* CTA Button */}
               <a href="#booking" className={plan.btnClass}>

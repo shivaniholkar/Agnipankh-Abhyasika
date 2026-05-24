@@ -1,4 +1,6 @@
-﻿function WhyUs() {
+﻿import whyus from '../assets/whyus.jpg'
+
+function WhyUs() {
   const reasons = [
     {
       id: 1,
@@ -18,7 +20,7 @@
       bgGradient: "from-orange-50",
       title: "स्पर्धा परीक्षांसाठी सर्वोत्तम",
       description:
-        "MPSC, UPSC, JEE, NEET — सर्व स्पर्धा परीक्षांच्या तयारीसाठी आदर्श",
+        "UPSC, MPSC, पोलीस भरती  — सर्व स्पर्धा परीक्षांच्या तयारीसाठी आदर्श ठिकाण",
     },
     {
       id: 3,
@@ -114,7 +116,7 @@
             {/* Main Image */}
             <div className="bg-gradient-to-br from-primary-100 to-orange-100 rounded-3xl p-8">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=500&fit=crop"
+                src={whyus}
                 className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
                 alt="अभ्यासरत विद्यार्थी"
               />

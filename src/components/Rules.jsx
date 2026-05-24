@@ -6,7 +6,7 @@
       iconBg: "bg-red-500",
       cardBg: "bg-red-50",
       borderColor: "border-red-100",
-      title: "पूर्ण शांतता पाळा",
+      title: "पूर्ण शांतता राखणे",
       description: "मोबाईल सायलेंट मोडवर ठेवा",
     },
     {

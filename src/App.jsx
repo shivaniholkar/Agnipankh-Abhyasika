@@ -25,7 +25,7 @@ function App() {
       <MarqueeBanner/>
       <About />
       <Features />
-      <Compartments />
+      {/* <Compartments /> */}
       <Pricing />
       <WhyUs />
       <Gallery />

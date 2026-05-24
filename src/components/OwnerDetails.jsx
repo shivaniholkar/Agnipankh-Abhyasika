@@ -1,26 +1,30 @@
+import mayur from "../assets/Mayur.jpeg"
+import harsh from "../assets/Harsh.jpeg"
+
+
 function OwnerDetails() {
   const owners = [
     {
-      name: 'राहुल देशमुख',
+      name: 'ॲड. मयुर सातव',
       role: 'संस्थापक & व्यवस्थापकीय संचालक',
-      phone: '+91 98765 43210',
-      email: 'rahul@shantiniketan.com',
-      whatsapp: '919876543210',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face',
-      experience: '8+ वर्षांचा अनुभव',
-      qualification: 'MBA, पुणे विद्यापीठ',
+      phone: '+91 9359080053',
+      email: 'mayursatav0302@gmail.com',
+      whatsapp: '919637167210',
+      image: mayur,
+      experience: '5+ वर्षांचा अनुभव',
+      qualification: 'BALLB, पुणे विद्यापीठ',
       quote: 'विद्यार्थ्यांना उत्तम अभ्यासाचे वातावरण देणे हे आमचे ध्येय आहे.',
       color: 'primary',
     },
     {
-      name: 'प्रिया जोशी',
-      role: 'सह-संस्थापक & संचालिका',
-      phone: '+91 87654 32109',
-      email: 'priya@shantiniketan.com',
-      whatsapp: '918765432109',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face',
-      experience: '6+ वर्षांचा अनुभव',
-      qualification: 'M.Ed, शिक्षणशास्त्र',
+      name: 'ॲड. हर्ष कर्चे',
+      role: 'सह-संस्थापक & संचालक',
+      phone: '+91 8208730007',
+      email: 'harshkarche0007@gmail.com',
+      whatsapp: '917887975427',
+      image: harsh,
+      experience: '5+ वर्षांचा अनुभव',
+      qualification: 'BSC LLB, पुणे विद्यापीठ',
       quote: 'प्रत्येक विद्यार्थ्याच्या यशात आमचे यश सामावलेले आहे.',
       color: 'accent',
     },
@@ -110,7 +114,7 @@ function OwnerDetails() {
                     {/* Avatar */}
                     <div className="relative flex-shrink-0">
                       <div
-                        className={`w-20 h-20 rounded-2xl overflow-hidden ring-3 ${c.ring} shadow-lg group-hover:scale-105 transition-transform duration-500`}
+                        className={`w-24 h-24 rounded-2xl overflow-hidden ring-3 ${c.ring} shadow-lg group-hover:scale-105 transition-transform duration-500`}
                       >
                         <img
                           src={owner.image}
@@ -119,9 +123,9 @@ function OwnerDetails() {
                         />
                       </div>
                       {/* Online indicator */}
-                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-lg flex items-center justify-center border-2 border-white shadow-sm">
+                      {/* <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-lg flex items-center justify-center border-2 border-white shadow-sm">
                         <i className="fas fa-check text-white text-[8px]"></i>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Name & Role */}
@@ -261,7 +265,7 @@ function OwnerDetails() {
                 <span>आत्ता कॉल करा</span>
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/7887975427"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center space-x-2 bg-green-50 border border-green-200 text-green-700 px-6 py-3 rounded-xl font-bold text-sm hover:bg-green-600 hover:text-white hover:border-green-600 transition-all"

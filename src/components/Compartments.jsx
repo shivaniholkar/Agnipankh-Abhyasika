@@ -78,14 +78,14 @@
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-4xl mx-auto mb-20">
           <div className="inline-flex items-center space-x-2 bg-orange-50 px-4 py-2 rounded-full mb-6">
             <i className="fas fa-door-open text-accent"></i>
             <span className="text-accent text-sm font-semibold">अभ्यास कक्ष प्रकार</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-black text-dark-900 mb-6 relative inline-block line-decoration">
-            तुमच्या गरजेनुसार{" "}
-            <span className="gradient-text">कक्ष निवडा</span>
+            तुमच्या इच्छेनुसार {" "}
+            <span className="gradient-text">कक्ष आणि डेस्क निवडा</span>
           </h2>
           <p className="text-dark-500 text-lg mt-8">
             प्रत्येक विद्यार्थ्याची गरज वेगळी असते. म्हणून आम्ही विविध प्रकारचे

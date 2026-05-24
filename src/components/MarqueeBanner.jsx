@@ -1,13 +1,13 @@
 function MarqueeBanner() {
   const marqueeItems = [
-    { id: 1, label: "MPSC तयारी" },
-    { id: 2, label: "UPSC तयारी" },
+    { id: 1, label: "UPSC तयारी" },
+    { id: 2, label: "MPSC तयारी" },
     { id: 3, label: "JEE/NEET" },
     { id: 4, label: "बँकिंग परीक्षा" },
     { id: 5, label: "SSC" },
     { id: 6, label: "कॉलेज अभ्यास" },
     { id: 7, label: "CA/CS" },
-    { id: 8, label: "शांत वातावरण" },
+    { id: 8, label: "पोलीस भरती" },
   ];
 
   return (

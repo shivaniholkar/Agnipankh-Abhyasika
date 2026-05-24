@@ -14,10 +14,10 @@
       ],
       review:
         "अग्निपंख अभ्यासिकेमुळे माझी MPSC ची तयारी उत्तम झाली. शांत वातावरण आणि आरामदायक कक्ष — माझ्या यशाचे श्रेय या अभ्यासिकेला!",
-      avatarLabel: "प्र",
+      avatarLabel: "अ",
       avatarGradient: "from-primary-400 to-primary-600",
-      name: "प्रशांत जाधव",
-      achievement: "MPSC उत्तीर्ण - 2024",
+      name: "अक्षय पवार",
+      achievement: "PSI (MPSC उत्तीर्ण - 2024)",
       achievementColor: "text-primary-600",
     },
     {
@@ -34,10 +34,10 @@
       ],
       review:
         "घरी अभ्यास करताना एकाग्रता लागत नव्हती. इथे आल्यापासून माझा अभ्यासाचा वेळ दुप्पट झाला. AC, WiFi, चहा — सगळं मिळतं!",
-      avatarLabel: "स",
+      avatarLabel: "शी",
       avatarGradient: "from-orange-400 to-accent",
-      name: "सायली पाटील",
-      achievement: "CA Inter उत्तीर्ण",
+      name: "शीतल खाडे",
+      achievement: "Mumbai Police",
       achievementColor: "text-accent",
     },
     {
@@ -54,9 +54,9 @@
       ],
       review:
         "JEE Advanced ची तयारी करताना दररोज 12 तास इथे अभ्यास केला. रात्री उशीरापर्यंत अभ्यास करता येतो. खूपच छान अनुभव!",
-      avatarLabel: "वि",
+      avatarLabel: "अ",
       avatarGradient: "from-green-400 to-green-600",
-      name: "विशाल शिंदे",
+      name: "अर्जुन करांडे",
       achievement: "IIT मुंबई - 2024",
       achievementColor: "text-green-600",
     },
